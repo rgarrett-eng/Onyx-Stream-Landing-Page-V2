@@ -100,7 +100,7 @@ export function InstallationGuide() {
                   </p>
                   <div className="bg-black border-2 border-green-600/50 rounded-lg p-6 text-center mb-4">
                     <p className="font-mono text-2xl md:text-3xl font-black text-green-400 tracking-wider select-all">
-                      onyxglobal.digital/OnyxStream.apk
+                      shorturl.at/31FlZ
                     </p>
                   </div>
                   <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-4">
@@ -128,7 +128,7 @@ export function InstallationGuide() {
                   <h4 className="text-xl font-bold text-white mb-3">Download the App File</h4>
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">
                     Open <strong className="text-white">Google Chrome</strong> (or your preferred web browser) on your phone or tablet and go to: 
-                    <strong className="text-onyx-cyan"> onyxglobal.digital/OnyxStream.apk</strong>
+                    <strong className="text-onyx-cyan"> shorturl.at/31FlZ</strong>
                   </p>
                   <div className="bg-blue-900/20 border border-blue-600/30 rounded-lg p-4">
                     <p className="text-xs text-blue-300">
