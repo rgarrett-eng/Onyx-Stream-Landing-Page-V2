@@ -22,7 +22,9 @@ export function LandingPage() {
   const [copied, setCopied] = useState(false);
   const [referralCopied, setReferralCopied] = useState(false);
 
-  const APK_DOWNLOAD_URL = 'https://onyxglobal.digital/OnyxStream.apk';
+  // ─── MASTER APK LINK ─────────────────────────────────────────────
+  // This single variable controls EVERY download button and the QR code on the page.
+  const APK_DOWNLOAD_URL = 'https://shorturl.at/vusrK';
   const REFERRAL_MESSAGE = `🎬 I'm using Onyx Stream for live TV & movies - it's incredible! Get your FREE 24-hour pass here: ${APK_DOWNLOAD_URL}`;
 
   const deviceImages = [
@@ -308,14 +310,18 @@ export function LandingPage() {
               </div>
 
               {/* Firestick/TV Installation Guide */}
-              <div className="w-full text-left bg-gradient-to-r from-orange-900/30 to-red-900/30 border-2 border-orange-600/50 p-4 rounded-lg">
+              <div className="w-full text-left bg-gradient-to-r from-orange-900/30 to-red-900/30 border-2 border-orange-600/50 p-4 rounded-lg shadow-inner">
                 <p className="text-xs text-orange-300 font-bold uppercase mb-2 flex items-center gap-2">
-                  <span className="text-lg">🔥</span> Firestick Setup
+                  <span className="text-lg">🔥</span> Firestick / Android TV Setup
                 </p>
-                <p className="text-xs text-gray-300 leading-relaxed">
-                  Open the <strong className="text-white">Downloader app</strong> and type:<br/>
-                  <span className="text-yellow-400 text-sm font-black block mt-2">https://onyxglobal.digital/OnyxStream.apk</span>
+                <p className="text-xs text-gray-300 leading-relaxed mb-3">
+                  Open the <strong className="text-white">Downloader app</strong> and enter this exact short link:
                 </p>
+                <div className="bg-black p-3 rounded border border-gray-800 text-center flex items-center justify-center">
+                  <p className="text-xl md:text-2xl font-black text-green-400 tracking-wider select-all">
+                    shorturl.at/vusrK
+                  </p>
+                </div>
               </div>
             </div>
           </div>
