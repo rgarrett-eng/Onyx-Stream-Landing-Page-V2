@@ -25,7 +25,7 @@ export function LandingPage() {
 
   // ─── MASTER APK LINK ─────────────────────────────────────────────
   // This single variable controls EVERY download button and the QR code on the page.
-  const APK_DOWNLOAD_URL = 'https://shorturl.at/vusrK';
+  const APK_DOWNLOAD_URL = 'https://onyxglobal.digital/OnyxStream.apk';
   const REFERRAL_MESSAGE = `🎬 I'm using Onyx Stream for live TV & movies - it's incredible! Get your FREE 24-hour pass here: ${APK_DOWNLOAD_URL}`;
 
   const deviceImages = [
@@ -262,8 +262,30 @@ export function LandingPage() {
                 href={APK_DOWNLOAD_URL}
                 className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-8 py-4 rounded-full font-bold shadow-lg shadow-yellow-500/30 hover:shadow-yellow-500/60 transition-all flex items-center justify-center gap-2 no-underline"
               >
-                <span>⚡</span> Download PRO App (APK)
+                Instant Download apk file
               </a>
+              <a 
+                href={APK_DOWNLOAD_URL}
+                className="bg-gray-900 hover:bg-gray-800 border border-gray-700 text-white px-8 py-4 rounded-full font-bold shadow-lg transition-all flex items-center justify-center gap-2 no-underline"
+              >
+                Download the apk app for Firestick
+              </a>
+              <button
+                onClick={handleCopyLink}
+                className="bg-transparent border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black px-8 py-4 rounded-full font-bold transition-all flex items-center gap-2"
+              >
+                {copied ? (
+                  <>
+                    <Check className="w-4 h-4" />
+                    <span>Copied to Clipboard!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-4 h-4" />
+                    <span>download for mobile (Copy Link)</span>
+                  </>
+                )}
+              </button>
             </div>
           </div>
 
@@ -316,11 +338,11 @@ export function LandingPage() {
                   <span className="text-lg">🔥</span> Firestick / Android TV Setup
                 </p>
                 <p className="text-xs text-gray-300 leading-relaxed mb-3">
-                  Open the <strong className="text-white">Downloader app</strong> and enter this exact short link:
+                  Open the <strong className="text-white">Downloader app</strong> and enter this exact URL:
                 </p>
                 <div className="bg-black p-3 rounded border border-gray-800 text-center flex items-center justify-center">
                   <p className="text-xl md:text-2xl font-black text-green-400 tracking-wider select-all">
-                    shorturl.at/vusrK
+                    onyxglobal.digital/OnyxStream.apk
                   </p>
                 </div>
               </div>
