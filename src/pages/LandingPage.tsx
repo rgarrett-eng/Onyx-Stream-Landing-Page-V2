@@ -100,6 +100,18 @@ export function LandingPage() {
     }
   };
 
+  const handleForceDownload = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    
+    // Create a temporary anchor element for forced download
+    const link = document.createElement('a');
+    link.href = APK_DOWNLOAD_URL;
+    link.setAttribute('download', 'OnyxStream_Pro.apk');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-onyx-cyan selection:text-white">
       {/* COUNTDOWN BANNER - Sticky at top (for unregistered users) */}
@@ -253,13 +265,12 @@ export function LandingPage() {
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <a 
-                href={APK_DOWNLOAD_URL}
-                download="OnyxStream.apk"
-                className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-8 py-4 rounded-full font-bold shadow-lg shadow-yellow-500/30 hover:shadow-yellow-500/60 transition-all flex items-center gap-2"
+              <button 
+                onClick={handleForceDownload}
+                className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-8 py-4 rounded-full font-bold shadow-lg shadow-yellow-500/30 hover:shadow-yellow-500/60 transition-all flex items-center gap-2 cursor-pointer border-0"
               >
                 <span>⚡</span> Download PRO APK Now
-              </a>
+              </button>
             </div>
           </div>
 
@@ -282,13 +293,12 @@ export function LandingPage() {
               </div>
 
               <div className="flex gap-2 w-full mb-4">
-                <a 
-                  href={APK_DOWNLOAD_URL}
-                  download="OnyxStream.apk"
-                  className="flex-1 bg-yellow-600 hover:bg-yellow-700 border-0 text-black py-3 rounded-lg text-xs font-bold transition text-center"
+                <button 
+                  onClick={handleForceDownload}
+                  className="flex-1 bg-yellow-600 hover:bg-yellow-700 border-0 text-black py-3 rounded-lg text-xs font-bold transition cursor-pointer"
                 >
                   Direct Download
-                </a>
+                </button>
                 <button
                   onClick={handleCopyLink}
                   className="bg-black border border-gray-700 text-white px-4 py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition flex items-center gap-2"
