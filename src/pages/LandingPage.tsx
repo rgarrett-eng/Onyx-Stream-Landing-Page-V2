@@ -10,6 +10,7 @@ import multiviewImage from '@/assets/usp-multiview.png';
 import { AppCarousel } from '@/components/features/AppCarousel';
 import { CountdownBanner } from '@/components/features/CountdownBanner';
 import { ProUpsellBanner } from '@/components/features/ProUpsellBanner';
+import { InstallationGuide } from '@/components/features/InstallationGuide';
 import heroMobilePhone from '@/assets/hero-mobile-phone.png';
 import heroTablet from '@/assets/hero-tablet.png';
 import heroSmartTV from '@/assets/hero-smart-tv.png';
@@ -875,7 +876,10 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* 12. FOOTER & LEGAL DISCLAIMER */}
+      {/* 12. INSTALLATION GUIDE - Interactive Tabbed Instructions */}
+      <InstallationGuide />
+
+      {/* 13. FOOTER & LEGAL DISCLAIMER */}
       <footer className="bg-[#030303] border-t border-gray-900 py-16 mt-12">
         <div className="container mx-auto px-6 flex flex-col items-center text-center gap-8">
           <div className="flex items-center gap-3 opacity-50">
