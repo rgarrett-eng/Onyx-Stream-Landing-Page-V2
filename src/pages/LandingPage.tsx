@@ -815,7 +815,12 @@ export function LandingPage() {
               <li>✓ 1 Device Limit</li>
               <li>✗ Contains Ads</li>
             </ul>
-            <button className="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition">Download Free</button>
+            <a 
+              href={APK_DOWNLOAD_URL}
+              className="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition block text-center no-underline"
+            >
+              Download Free
+            </a>
           </div>
 
           {/* Onyx Lite */}
@@ -832,7 +837,12 @@ export function LandingPage() {
               <li className="text-gray-500">✗ 1 Device Limit</li>
               <li className="text-gray-500">✗ No Multi-View</li>
             </ul>
-            <button className="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition">Unlock Lite</button>
+            <a 
+              href={APK_DOWNLOAD_URL}
+              className="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition block text-center no-underline"
+            >
+              Unlock Lite
+            </a>
           </div>
 
           {/* Onyx PRO */}
@@ -849,7 +859,12 @@ export function LandingPage() {
               <li><strong className="text-white">✓ Multi-View (Watch 4 Screens)</strong></li>
               <li><strong className="text-white">✓ 7-Day Catch-Up TV</strong></li>
             </ul>
-            <button className="w-full bg-gradient-to-r from-onyx-cyan to-onyx-blue hover:from-onyx-cyan-dark hover:to-onyx-blue-dark text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-onyx-cyan/30 hover:shadow-onyx-cyan/60">Get Pro Access</button>
+            <a 
+              href={APK_DOWNLOAD_URL}
+              className="w-full bg-gradient-to-r from-onyx-cyan to-onyx-blue hover:from-onyx-cyan-dark hover:to-onyx-blue-dark text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-onyx-cyan/30 hover:shadow-onyx-cyan/60 block text-center no-underline"
+            >
+              Get Pro Access
+            </a>
           </div>
         </div>
       </section>
