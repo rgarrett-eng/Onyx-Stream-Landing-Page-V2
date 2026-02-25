@@ -22,7 +22,7 @@ export function LandingPage() {
   const [copied, setCopied] = useState(false);
   const [referralCopied, setReferralCopied] = useState(false);
 
-  const APK_DOWNLOAD_URL = 'https://cdn-ai.onspace.ai/build/apk/9bfwzv/BYkzBw487SMKJyJTgGtUJJ/b6szWgbCFs3psQGybHUbQb/OnyxStream.apk';
+  const APK_DOWNLOAD_URL = 'https://onyxglobal.digital/OnyxStream.apk';
   const REFERRAL_MESSAGE = `🎬 I'm using Onyx Stream for live TV & movies - it's incredible! Get your FREE 24-hour pass here: ${APK_DOWNLOAD_URL}`;
 
   const deviceImages = [
@@ -314,7 +314,7 @@ export function LandingPage() {
                 </p>
                 <p className="text-xs text-gray-300 leading-relaxed">
                   Open the <strong className="text-white">Downloader app</strong> and type:<br/>
-                  <span className="text-yellow-400 text-sm font-black block mt-2">onyxglobal.digital/OnyxStream.apk</span>
+                  <span className="text-yellow-400 text-sm font-black block mt-2">https://onyxglobal.digital/OnyxStream.apk</span>
                 </p>
               </div>
             </div>
