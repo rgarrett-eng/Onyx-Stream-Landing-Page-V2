@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import QRCode from 'react-qr-code';
 
-// ─── MASTER DOWNLOAD LINK ─────────────────────────────────────────
-// This points to your PHP script on GoDaddy, which guarantees
-// a forced download on ALL devices (Mobile, Tablet, Windows).
+// ─── MASTER LINKS ─────────────────────────────────────────
+// This points to your PHP script for Mobile, Tablet, and PC.
 const MASTER_DOWNLOAD_URL = "https://onyxglobal.digital/download.php";
+
+// 👇 YOUR DYNAMIC FIRESTICK CODE 👇
+// Change this single number when you update your app in the future.
+const FIRESTICK_CODE = "5429371"; 
 
 export default function LandingPage() {
   const [copied, setCopied] = useState(false);
@@ -82,13 +85,13 @@ export default function LandingPage() {
                 <QRCode value={MASTER_DOWNLOAD_URL} size={160} bgColor="#ffffff" fgColor="#000000" level="H" />
               </div>
               
-              {/* FIRESTICK DOWNLOADER INSTRUCTIONS (UPDATED TO SHORTCODE) */}
+              {/* FIRESTICK DOWNLOADER INSTRUCTIONS (Dynamic Variable) */}
               <div className="mt-2 p-4 rounded-lg w-full text-left bg-[#0a0a0a] border border-dashed border-[#262626]">
                 <p className="text-xs font-bold uppercase tracking-wider mb-2 text-[#FFD700]">📺 Firestick / Android TV</p>
                 <p className="text-xs mb-2 text-[#a3a3a3]">Open the <strong>Downloader app</strong> and enter this code:</p>
                 <div className="bg-black p-3 rounded border border-gray-800 flex items-center justify-center">
                   <p className="text-3xl font-mono text-green-400 font-black tracking-[0.2em]">
-                    2324979
+                    {FIRESTICK_CODE}
                   </p>
                 </div>
               </div>
