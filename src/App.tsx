@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from '@/pages/LandingPage';
+import { LandingPage } from '@/pages/LandingPage';
 import { SetupGuide } from '@/pages/SetupGuide';
 import { PrivacyPolicy } from '@/pages/PrivacyPolicy';
 import { TermsOfService } from '@/pages/TermsOfService';
