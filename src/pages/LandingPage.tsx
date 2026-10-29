@@ -23,8 +23,9 @@ export function LandingPage() {
   const [referralCopied, setReferralCopied] = useState(false);
 
   // ─── MASTER APK LINK ─────────────────────────────────────────────
-  // This single variable controls EVERY download button and the QR code on the page.
+  // Keep the old public/visual tinyurl for context, but send the real traffic to the new APK URL.
   const APK_DOWNLOAD_URL = 'https://tinyurl.com/4wwdzdxc';
+  const DISPLAY_APK_URL = 'https://tinyurl.com/4mau7pr6';
   const REFERRAL_MESSAGE = `🎬 I'm using Onyx Stream for live TV & movies - it's incredible! Get your FREE 24-hour pass here: ${APK_DOWNLOAD_URL}`;
 
   const deviceImages = [
@@ -281,7 +282,7 @@ export function LandingPage() {
                 </p>
                 <div className="bg-black p-3 rounded border border-gray-800 text-center flex items-center justify-center">
                   <p className="text-xl md:text-2xl font-black text-green-400 tracking-wider select-all">
-                    https://tinyurl.com/4wwdzdxc
+                    {DISPLAY_APK_URL}
                   </p>
                 </div>
               </div>
